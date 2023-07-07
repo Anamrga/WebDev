@@ -18,12 +18,66 @@ internal quando o target e um unica web page
 -->
 external target todo o website basicamente e uma pasta a parte em .ccs mas temos
 de por dentro ou do inicio no
-<html></html>
-ou <head></head> um <link rel="stylesheet" href="nome da pasta do css" />
+<html>
+
+</html>
+ou
+
+<head></head> um
+<link rel="stylesheet" href="nome da pasta do css" />
+
 exemplo
 
 <html>
-  <head>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
 </html>
+
+e na folha vai estar html{background-color: aqua;}
+
+ID selecter
+
+neste caso e para todos ps h1 fique azul
+
+h1{
+color: blue
+}
+
+class selecter (para varios elementos)
+seja o que for, h1 2 3 p etc
+<h2 class="red-text">Red</h2>
+
+e na folha style.css
+.red-text{
+color:red;
+}
+
+ID selecter funciona parecido a class mas a class funciona para muitos elementos  e o id so para 1
+
+<h2 id="ze">manuel</h2>
+e na folha style.css
+#ze {
+   color:red; 
+  }
+
+
+Atribute selector 
+atributos : <h1 , id=, class=, draggable=, src=, href=, alt= etc
+
+p[draggable]{ color: red
+}  
+
+isto diz seleciona todos os elementos de paragrafo com o atributo draggable e aplica este estilo de css vermelho
+
+podemos selecionar o value do atributo que queremos aplicar o css:
+
+<p draggable="false">dont draggable</p>
+<p draggable="true"> draggable</p>
+
+universal selector 
+*{
+  color:red
+}
